@@ -195,7 +195,7 @@ function drawProducts() {
           </div>
       <div class="AddToCart flex justify-center items-center gap-4">
         <i data-id="${item.id}" class="fa-solid fa-heart cursor-pointer text-pink-400 "></i>
-        <button data-id="${item.id}" data-quantity="${item.quantity}" class="addBtn px-4 py-2 rounded-lg text-white bg-[#FE5D9F]">Add To Cart</button>
+        <button data-id="${item.id}" data-quantity="${item.quantity}" class="addBtn px-4 py-2 rounded-lg text-white bg-[#FE5D9F] border-0 outline-none">Add To Cart</button>
           </div>
     </div>
         `
@@ -510,4 +510,13 @@ shoppingCart.addEventListener("click", function () {
     }
 })
 
+document.addEventListener("click", e => {
+    if (
+        !shoppingCart.contains(e.target) && 
+        !viewAllProducts.contains(e.target))
+     {
+        viewAllProducts.classList.remove("flex")
+        viewAllProducts.classList.add("hidden")
+    }
+})
 
