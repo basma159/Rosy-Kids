@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosy Kids | Register Page</title>
+    <link rel="shortcut icon" href="images/logo-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-[linear-gradient(to_left,rgb(214,210,210),rgb(241,228,243),rgb(244,187,211))]">
+
+    <header class="flex justify-between items-center w-full h-28 px-10 shadow-lg shadow-black/20
+    bg-[linear-gradient(to_left,rgb(214,210,210),rgb(241,228,243),rgb(244,187,211))] ">
+        <div class="logo flex justify-center items-center gap-0">
+            <a href="index.html"><img src="images/logo-removebg-preview.png" class="w-32 h-32 object-contain"
+                    alt=""></a>
+            <a href="index.html">
+                <h2 class="text-white font-bold text-xl">Rosy Kids</h2>
+            </a>
+
+        </div>
+    </header>
+
+    <section class="my-10 flex justify-center items-center">
+        <form action="" class="w-[90%] bg-[linear-gradient(to_right,rgb(241,228,243),rgb(244,187,211))] 
+        p-6 gap-5 space-y-5 shadow-lg shadow-black/25 rounded-lg">
+            <div class="full-name flex gap-3">
+                <div class="first-name flex flex-col w-1/2 gap-2">
+                    <label for="">First Name</label>
+                    <input type="text" class="p-2 rounded-lg outline-1 focus:outline-pink-400" id="firstName"
+                        placeholder="Enter first name">
+                </div>
+                <div class="Last-name flex flex-col w-1/2 gap-2">
+                    <label for="">Last Name</label>
+                    <input type="text" class="p-2 rounded-lg outline-1 focus:outline-pink-400" id="lastName" placeholder="Enter last name">
+                </div>
+            </div>
+
+            <div class="Email flex flex-col gap-2">
+                <label for="">Email</label>
+                <input type="email" class="p-2 rounded-lg outline-1 focus:outline-pink-400" id="email" placeholder="Enter email">
+            </div>
+            <div class="Password flex flex-col gap-2">
+                <label for="">Password</label>
+                <input type="password" class="p-2 rounded-lg outline-1 focus:outline-pink-400" id="password" placeholder="Enter password">
+            </div>
+            <button type="submit" id="registerBtn"
+                class="px-3 py-2 rounded-lg  ring-1 text-pink-400 ring-pink-400 hover:bg-pink-400 hover:text-white transition-all duration-300">Register</button>
+            <p>Have an account? <a href="login.html" class="text-[#d66ba0]">Login</a></p>
+
+        </form>
+    </section>
+
+    <script src="js/register.js"></script>
+</body>
+
+</html>
