@@ -12,8 +12,8 @@ body {
     position: relative;
 }
 
-/* .favorite-item1::after { 
-     position: absolute;
+.favorite-item1::after {
+    position: absolute;
     content: "";
     left: 50%;
     bottom: -9px;
@@ -26,9 +26,10 @@ body {
 
 .favorite-item1:hover::after {
     transform: translateX(-50%);
-    width: 180%; 
+    width: 180%;
 
-} */
+}
+
 .viewAllProducts::-webkit-scrollbar {
     background-color: rgb(240, 154, 168);
     width: 10px;
